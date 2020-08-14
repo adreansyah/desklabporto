@@ -1,18 +1,6 @@
 # Desklab Back Office
 Backoffice Desklab migrate new master-ui and frontend framework
 
-## Information
-
-* Swagger Intranet : http://172.18.186.48:8082/admin/docs
-* Staging Intranet : http://172.18.186.48:8085
-* Staging Internet : http://bo.desklab.elevenia.tech
-* Production : http://desklab.elevenia.co.id
-* Figma : https://www.figma.com/file/E1hgiYjCuECreBDWj4Whio/3.1-Desklab
-* SBD : https://drive.google.com/file/d/1SNcvojyTMb-6ylO3i4tiB9gXteOQ6hyd/view
-* Jenkins Staging : http://172.18.186.34:8888/job/Desklab%20Project/job/Development/job/EOF_BackOffice/
-* Jenkins Production : http://172.18.186.34:8888/job/Desklab%20Project/job/Production/job/EOF_WebAdminProject/
-
-
 ## Installation
 
 Install the dependencies and devDependencies and start the server.
