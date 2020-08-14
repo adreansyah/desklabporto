@@ -1,0 +1,37 @@
+//display
+.u-ds-none { display: none !important; }
+.u-ds-block { display: block !important; }
+.u-ds-inline-block { display: inline-block !important; }
+.u-ds-inline { display: inline !important; }
+.u-ds-table { display: table !important; }
+.u-ds-flex { display: flex !important; }
+.u-ds-inline-flex { display: inline-flex !important; }
+.u-ds-table-cell { display: table-cell !important; } 
+.u-ds-table-row { display: table-row !important; }
+
+//overflow
+.u-ov-hidden { overflow: hidden !important; }
+.u-ov-scroll { overflow: scroll !important; }
+.u-ov-auto { overflow: auto !important; }
+.u-ov-x-hidden { overflow-x: hidden !important; }
+.u-ov-x-scroll { overflow-x: scroll !important; }
+.u-ov-x-auto { overflow-x: auto !important; }
+.u-ov-y-hidden { overflow-y: hidden !important; }
+.u-ov-y-scroll { overflow-y: scroll !important; }
+.u-ov-y-auto { overflow-y: auto !important; }
+
+//cursor
+.u-cr-default { cursor: default; }
+.u-cr-pointer { cursor: pointer; }
+.u-cr-context-menu { cursor: context-menu; }
+.u-cr-help { cursor: help; }
+.u-cr-progress { cursor: progress; }
+.u-cr-crosshair { cursor: crosshair; }
+.u-cr-text { cursor: text; }
+.u-cr-copy { cursor: copy; }
+.u-cr-move { cursor: move; }
+.u-cr-not-allowed { cursor: not-allowed; }
+.u-cr-zoom-in { cursor: zoom-in; }
+.u-cr-zoom-out { cursor: zoom-out; }
+.u-cr-grab { cursor: grab; }
+.u-cr-grabbing { cursor: grabbing; }

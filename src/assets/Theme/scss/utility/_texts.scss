@@ -1,0 +1,104 @@
+// Text
+
+.u-tx-center {text-align: center !important}
+.u-tx-right {text-align: right !important}
+.u-tx-left {text-align: left !important}
+.u-tx-nowrap {white-space: nowrap !important}
+.u-tx-wrap {white-space: normal !important}
+.u-fw-light {font-weight: $font-weight-light !important}
+.u-fw-normal {font-weight: $font-weight-base !important}
+.u-fw-regular {font-weight: $font-weight-medium !important}
+.u-fw-bold {font-weight: $font-weight-bold !important}
+.u-tx-italic {font-style: italic !important}
+.u-tx-upcase {text-transform: uppercase !important}
+.u-tx-lowcase {text-transform: lowercase !important}
+.u-tx-capital {text-transform: capitalize !important}
+.u-tx-nodecor {text-decoration: none !important}
+
+.u-tx-d1{
+    font-size: $font-size-d1;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-d1;
+}
+.u-tx-d2{
+    font-size: $font-size-d2;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-d2;
+}
+.u-tx-d3{
+    font-size: $font-size-d3;
+    line-height: $font-height-d3;
+}
+.u-tx-d4{
+    font-size: $font-size-d4;
+    line-height: $font-height-d4;
+}
+.u-tx-b2{
+    font-size: $font-size-b2;
+    line-height: $font-height-b2;
+}
+.u-tx-b3{
+    font-size: $font-size-b3;
+    line-height: $font-height-b3;
+}
+.u-tx-b4{
+    font-size: $font-size-b4;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-b4;
+}
+
+.u-tx-p1{
+    line-height: $font-height-p1;
+}
+
+.u-tx-p2{
+    font-size: $font-size-p2;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-p2;
+}
+
+h1{
+    font-size: $font-size-h1;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-h1;
+}
+
+h2{
+    font-size: $font-size-h2;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-h2;
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: $font-size-h3;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-h3;
+}
+
+h4{
+    font-size: $font-size-h4;
+    font-weight: $font-weight-medium;
+    line-height: $font-height-h4;
+}
+
+a{
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+        color: $orange20;
+        text-decoration: underline;
+    }
+    &:active{
+        color: $orange40;
+        text-decoration: underline;
+    }
+    &.u-tx-secondary-green {
+        &:hover {
+            color: $green20;
+        }
+        &:active{
+            color: $green40;
+        }
+    }
+}

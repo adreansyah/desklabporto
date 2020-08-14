@@ -1,0 +1,56 @@
+pipeline {
+
+    environment {
+	containerName = "${SERVICE_NAME}"
+	serviceName = "${SERVICE_NAME}"
+	imageName = "${ENVIRONMENT}_${SERVICE_NAME}"
+	destination = "${SERVER}"
+	env = "${ENVIRONMENT}"
+	registryAddress = "${SERVER}"
+	registryPort = "8761"
+    }
+	
+    agent any
+    tools {
+	nodejs "node"
+    }
+
+    stages {    
+	stage('Check param') {
+	    steps {
+		sh 'echo Container Name ${containerName}'
+		sh 'echo Service Name ${serviceName}'
+		sh 'echo Image Name ${imageName}'
+		sh 'echo Destination ${destination}'
+		sh 'echo Environment ${env}'
+	    }
+        }
+		
+        stage('Checkout') {
+	    steps {
+		checkout scm
+	    }
+        }
+		
+	stage('Create docker and .tar file') {
+	    steps {
+		sh "docker build --build-arg profile=${PROFILE} --build-arg port=${PORT_FORWARD} --no-cache -t ${imageName} ."
+		sh 'pwd'
+		sh 'docker save ${imageName} > /data1/docker/dockerimages/${imageName}.tar'
+	    }
+	}
+		
+        stage('Copy and deploy') {
+            steps {
+                sh "sh /data1/docker/dockerimages/copyImages.sh ${imageName} ${PROFILE} ${destination}"
+                sh "ssh tomcat@${destination} 'sh /data1/docker/dockerimages/deployImages.sh ${PROFILE} ${containerName} ${imageName} ${PORT_FORWARD} ${registryAddress} ${registryPort} ${env}'"
+            }
+        }
+	
+        stage('Remove deployed image in Jenkins server') {
+            steps {
+        	sh "docker rmi ${imageName}"
+            }
+        }
+    }
+}

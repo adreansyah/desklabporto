@@ -1,0 +1,221 @@
+//
+// Color system
+//
+
+// Orange/Primary Color
+$orange10 : #FFF0E6;
+$orange20 : #FF9242;
+$orange30 : #FF7D1D; // Base
+$orange40 : #FF6C00; 
+$orange50 : #E65015;
+
+// Green/Secondary Color
+$green10 : #E7F6D1;
+$green20 : #A4D067;
+$green30 : #8FC742; // Base
+$green40 : #82BB33;
+$green50 : #5C940F; 
+
+// Red
+$red10 : #FFEDEE;
+$red20 : #FD474A;
+$red30 : #EE2B2E; // Base
+$red40 : #DC1013;
+$red50 : #BB0000; 
+
+// Black
+$black10 : #F8FBFC;
+$black20 : #EFF3F6;
+$black30 : #DCDEE3;
+$black40 : #9C9DA6;
+$black50 : #70727D;
+$black60 : #434755;
+$black70 : #151823;
+
+$white : #ffffff;
+$primary : $orange30;
+$secondary-green : $green30;
+$secondary-red : $red30;
+$success : $green30;
+$danger : $red30;
+$warning : $orange40;
+$info : $black50;
+$light : $black30;
+$dark : $black70;
+
+$colors: (
+  ("primary", $orange30),
+  ("secondary-green", $green30),
+  ("secondary-red", $red30),
+  ("success", $green30),
+  ("error", $red30),
+  ("warning", $orange40),
+  ("info", $black50),
+  ("light", $black30),
+  ("dark", $black70),
+  ("black10", $black10),
+  ("black20", $black20),
+  ("black30", $black30),
+  ("black40", $black40),
+  ("black50", $black50),
+  ("black60", $black60),
+  ("black70", $black70),
+  ("white", $white)
+);
+
+//
+// Spacing
+//
+
+$padding0 : 0px;
+$padding1 : 4px;
+$padding2 : 8px;
+$padding3 : 12px;
+$padding4 : 16px;
+$padding5 : 20px;
+$padding6 : 24px;
+$padding7 : 28px;
+$padding8 : 32px;
+$padding9 : 36px;
+$padding10 : 40px;
+$padding11 : 44px;
+$padding12 : 48px;
+
+$paddings: (
+  ("0", $padding0),
+  ("1", $padding1),
+  ("2", $padding2),
+  ("3", $padding3),
+  ("4", $padding4),
+  ("5", $padding5),
+  ("6", $padding6),
+  ("7", $padding7),
+  ("8", $padding8),
+  ("9", $padding9),
+  ("10", $padding10),
+  ("11", $padding11),
+  ("12", $padding12),
+);
+
+$margin0 : 0px;
+$margin1 : 4px;
+$margin2 : 8px;
+$margin3 : 12px;
+$margin4 : 16px;
+$margin5 : 20px;
+$margin6 : 24px;
+$margin7 : 28px;
+$margin8 : 32px;
+$margin9 : 36px;
+$margin10 : 40px;
+$margin11 : 44px;
+$margin12 : 48px;
+
+$margins: (
+  ("0", $margin0),
+  ("1", $margin1),
+  ("2", $margin2),
+  ("3", $margin3),
+  ("4", $margin4),
+  ("5", $margin5),
+  ("6", $margin6),
+  ("7", $margin7),
+  ("8", $margin8),
+  ("9", $margin9),
+  ("10", $margin10),
+  ("11", $margin11),
+  ("12", $margin12),
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+// shadow
+$shadow-default: 0 1px 4px 0 rgba(112, 114, 125, 0.2);
+$shadow-default-action: 0 1px 4px 0 rgba(112, 114, 125, 0.4);
+$shadow-hover: 0 2px 8px 0 rgba(112, 114, 125, 0.4);
+$shadow-disabled: 0 1px 3px 0 rgba(112, 114, 125, 0.2);
+
+$link-decoration:           none !default;
+$link-hover-decoration:     underline !default;
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$border-width:                1px !default;
+$border-color:                $black40 !default;
+$border-radius:               4px !default;
+
+$transition-base:             all .2s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+$font-family-rubik:           'Rubik', sans-serif;
+$font-family-base:            $font-family-rubik !default;
+// stylelint-enable value-keyword-case
+
+// font size
+$font-size-base:           14px !default;
+$font-size-d1:             42px !default; // 42px
+$font-size-d2:             28px !default; // 28px
+$font-size-d3:             24px !default; // 24px
+$font-size-d4:             20px !default; // 20px
+$font-size-h1:             16px !default; // 16px
+$font-size-h2:             14px !default; // 14px
+$font-size-h3:             12px !default; // 12px
+$font-size-h4:             10px !default; // 10px
+$font-size-b1:             14px !default; // 14px
+$font-size-b2:             12px !default; // 12px
+$font-size-b3:             10px !default; // 10px
+$font-size-b4:             10px !default; // 10px
+$font-size-p1:             14px !default; // 14px
+$font-size-p2:             12px !default; // 12px
+
+// font height
+$font-height-d1:           ($font-size-d1 + 2) !default;
+$font-height-d2:           ($font-size-d2 + 2) !default;
+$font-height-d3:           ($font-size-d3 + 2) !default;
+$font-height-d4:           ($font-size-d4 + 2) !default;
+$font-height-h1:           ($font-size-h1 + 2) !default;
+$font-height-h2:           ($font-size-h2 + 2) !default;
+$font-height-h3:           ($font-size-h3 + 2) !default;
+$font-height-h4:           ($font-size-h4 + 2) !default;
+$font-height-b2:           ($font-size-b2 + 2) !default;
+$font-height-b3:           ($font-size-b3 + 2) !default;
+$font-height-b4:           ($font-size-b4 + 2) !default;
+$font-height-p1:           1.5 !default;
+$font-height-p2:           1.5 !default;
+
+// font weight
+$font-weight-light:           300 !default;
+$font-weight-regular:         400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:          $font-weight-regular !default;
+$line-height-base:          ($font-size-base + 2) !default; // 20px
+
+
+$font-color-error:            $red40 !default;
+$font-color-succes:           $green40 !default;
+$font-color-warning:          $orange20 !default;
+
+// Z-index master list
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;
+
+
+
